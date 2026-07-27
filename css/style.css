@@ -352,6 +352,10 @@ align-items:flex-end;
 
     }
 
+     .black-keys{
+        transform: translateX(-12px);
+    }
+
 
 
     .piano-section{
