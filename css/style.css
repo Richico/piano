@@ -342,19 +342,65 @@ align-items:flex-end;
 
 /* Landscape phones */
 
-@media (max-width:900px) and (orientation:landscape){
+@media (max-width: 900px) and (orientation: landscape) {
 
-    .piano-container{
-
-        transform:scale(.72);
-
-        transform-origin:bottom center;
-
+    /* White keys */
+    .key.white{
+        width:52px;
+        height:200px;
     }
 
-     .black-keys{
-        transform: translateX(-12px);
+    /* Black keys */
+    .key.black{
+        width:30px;
+        height:120px;
     }
+
+    /* ---------- First Octave ---------- */
+
+    .key.black:nth-child(1){
+        left:37px;
+    }
+
+    .key.black:nth-child(2){
+        left:107px;
+    }
+
+    .key.black:nth-child(4){
+        left:247px;
+    }
+
+    .key.black:nth-child(5){
+        left:317px;
+    }
+
+    .key.black:nth-child(6){
+        left:387px;
+    }
+
+    /* ---------- Second Octave ---------- */
+
+    .key.black:nth-child(8){
+        left:527px;
+    }
+
+    .key.black:nth-child(9){
+        left:597px;
+    }
+
+    .key.black:nth-child(11){
+        left:737px;
+    }
+
+    .key.black:nth-child(12){
+        left:807px;
+    }
+
+    .key.black:nth-child(13){
+        left:877px;
+    }
+
+}
 
 
 
