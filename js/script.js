@@ -337,6 +337,22 @@ document.addEventListener("keydown", (event) => {
 // Change Website Title
 // --------------------------------------
 
+function changeTitle(newTitle) {
+
+    if (!siteTitle) return;
+
+    siteTitle.style.opacity = "0";
+
+    setTimeout(() => {
+
+        siteTitle.textContent = newTitle;
+
+        siteTitle.style.opacity = "1";
+
+    }, 300);
+
+}
+
 // ======================================
 // First Time Loading
 // ======================================
@@ -466,19 +482,19 @@ window.addEventListener("load", () => {
 
     if (firstVisit) {
 
-        changeTitle("🎉 Happy Birthday 🎂");
+        changeTitle("Happy Birthday Mohila!");
 
         localStorage.setItem("birthdayShown", "true");
 
         setTimeout(() => {
 
-            changeTitle("Peaceful Corner");
+            changeTitle("Peace With Piano");
 
         }, 20000);
 
     } else {
 
-        changeTitle("Peaceful Corner");
+        changeTitle("Peace With Piano");
 
     }
 
