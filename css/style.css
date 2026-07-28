@@ -74,7 +74,7 @@ Background Video
 
     inset:0;
 
-    background:rgba(0, 0, 0, 0.436);
+    background:rgba(0, 0, 0, 0.525);
 
     z-index:-1;
 }
@@ -140,7 +140,7 @@ Background Video
 
     width:max-content;
 
-    overflow-x:auto;
+    overflow:hidden;
 
 }
 

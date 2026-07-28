@@ -337,21 +337,23 @@ document.addEventListener("keydown", (event) => {
 // Change Website Title
 // --------------------------------------
 
-function changeTitle(newTitle) {
+// ======================================
+// First Time Loading
+// ======================================
 
-    if (!siteTitle) return;
+window.addEventListener("load", () => {
 
-    siteTitle.style.opacity = "0";
+    // Show Happy Birthday first
+    changeTitle(" Happy Birthday Mohila !");
 
+    // After 20 seconds, change to Peaceful Corner
     setTimeout(() => {
 
-        siteTitle.textContent = newTitle;
+        changeTitle("Peace With Piano");
 
-        siteTitle.style.opacity = "1";
+    }, 20000);
 
-    }, 250);
-
-}
+});
 
 
 
@@ -455,6 +457,30 @@ document.addEventListener("keyup", (event) => {
     }
 
     updateKeyLabels(currentMap);
+
+});
+
+window.addEventListener("load", () => {
+
+    const firstVisit = !localStorage.getItem("birthdayShown");
+
+    if (firstVisit) {
+
+        changeTitle("🎉 Happy Birthday 🎂");
+
+        localStorage.setItem("birthdayShown", "true");
+
+        setTimeout(() => {
+
+            changeTitle("Peaceful Corner");
+
+        }, 20000);
+
+    } else {
+
+        changeTitle("Peaceful Corner");
+
+    }
 
 });
 
