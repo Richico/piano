@@ -1,6 +1,5 @@
 const pianoKeys = document.querySelectorAll(".key");
 const siteTitle = document.getElementById("site-title");
-const playThemeBtn = document.getElementById("play-theme-btn");
 
 // Prevent user from playing while intro runs
 let introPlaying = false;
@@ -42,25 +41,25 @@ const noteMap = {
     "C3":"key25",
     "C#3":"key26",
     "D3":"key27",
-    "D#3":"key28", //visit
+    // "D#3":"key28", //visit
     "E3":"key29",
 
     "F3":"key30",
-    "F#3":"key31", //visit
+    // "F#3":"key31", //visit
     "G3":"key32",
-    "G#3":"key33", //visit
+    // "G#3":"key33", //visit
     "A3":"key34",
-    "A#3":"key35", //visit
+    // "A#3":"key35", //visit
     "B3":"key36",
 
     "C4":"key37",
-    "C#4":"key38", //visit
+    // "C#4":"key38", //visit
     "D4":"key39",
-    "D#4":"key40", //visit
+    // "D#4":"key40", //visit
     "E4":"key41",
 
     "F4":"key42",
-    "F#4":"key43", //visit
+    // "F#4":"key43", //visit
     "G4":"key44",
 
     "G#4":"key45", 
