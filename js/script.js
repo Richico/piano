@@ -475,29 +475,29 @@ document.addEventListener("keyup", (event) => {
 
 });
 
-//window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
 
 //    const firstVisit = !localStorage.getItem("birthdayShown");
 
-  //  if (firstVisit) {
+//    if (firstVisit) {
 
-    //    changeTitle("Happy Birthday Mohila!");
+//        changeTitle("Happy Birthday Mohila!");
 
-      //  localStorage.setItem("birthdayShown", "true");
+//        localStorage.setItem("birthdayShown", "true");
 
-        //setTimeout(() => {
+//         setTimeout(() => {
 
-          //  changeTitle("Peace With Piano");
+//            changeTitle("Peace With Piano");
 
-       // }, 20000);
+//        }, 20000);
 
-   // } else {
+//    } else {
 
-     //   changeTitle("Peace With Piano");
+//        changeTitle("Peace With Piano");
 
-    //}
+//     }
 
-//});
+// });
 
 // ======================================
 // END
